@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Category News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+       <img src="./images/NexGen News 800x600.jpg" alt="NexGen News Logo" class="logo">
+  <div class="inputSearch desktop">
+    <form id="searchForm">
+   <input type="text" placeholder="Type to search..." id="searchInput"/>
+     <span> <i class="fa-solid fa-search"></i></span>
+</form>
+</div>
+    <nav class="nav-links desktop">
+      <ul>
+        <li><a href="new.html">Home</a></li>
+        <li onclick="Search('Tech')">Tech</li>
+        <li onclick="Search('Politics')">Politics</li>
+        <li onclick="Search('Education')">Education</li>
+        <li onclick="Search('Sorts')">Sports</li>
+        <li onclick="Search('Entertainment')">Entertainment</li>
+
+      </ul>
+    </nav>  
+    
+      <button class="btn" onclick="location.href='addNotes.html'">Add Notes</button>
+  
+    <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="mobile hidden">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="new.html">Home</a></li>
+                <li onclick="Search('Tech')">Tech</li>
+                <li onclick="Search('Politics')">Politics</li>
+                <li onclick="Search('Education')">Education</li>
+                <li onclick="Search('Sorts')">Sports</li>
+                <li onclick="Search('Entertainment')">Entertainment</li>
+            </ul>
+          </nav> 
+          <div class="inputSearch">
+            <form id="searchFormMobile" id="searchInputMobile">
+            <input type="text" placeholder="Type to search..."/>
+              <span> <i class="fa-solid fa-search"></i></span>
+             </div>
+            </form>
+      </div>
+</div>
+<main></main>
+<script src="./category.js"></script>
+</body>
+</html>
